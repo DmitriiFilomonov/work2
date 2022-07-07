@@ -1,0 +1,172 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+.h1
+{
+    font-size: 100px;
+    margin: revert;
+    text-align: center;
+    color: azure;
+}
+.playground{
+    position: relative;
+    border: 4px solid black;
+    margin: 10px;
+}
+.kub1
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: #3BBCE3;
+    margin: 10px;
+}
+.vkub1
+{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    bottom: 0;
+    right: 0;
+    background: #FFBF47;
+}
+.kub4
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: #8ED78F;
+    left: 520px;
+    top: 10px;
+    margin: 10px;
+}
+.vkub4{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background: #DC91D8;
+}
+.kub2
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: #FFBF47;
+    bottom: 1020px;
+    left: 520px;
+    margin: 10px;
+}
+.vkub2{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    bottom: 0;
+    left: 0;
+    background: #3BBCE3;
+}
+.kub3
+{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    bottom: 1010px;
+    background: #DC91D8;
+    margin: 10px;
+}
+.vkub3{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    background: #8ED78F;
+}
+/*Объекты которые будут меняться*/
+/*.kvad{*/
+/*    position: absolute;*/
+/*    width: 248px;*/
+/*    height: 248px;*/
+/*    border: 20px solid white;*/
+/*    background: green;*/
+/*}*/
+.vkub1__kvad{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 20px solid white;
+    bottom: 250px;
+    right: 250px;
+    background: #8ED78F;
+    transform: translate(0px, 0px);
+    transition: all 0.8s ease 0s;
+}
+.vkub1:hover .vkub1__kvad{
+    transform: translate(250px, 0px);
+    transition: all 0.8s ease 0s;
+    border-radius: 50%;
+    background: #d745ee;
+}
+.vkub4__krug{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 20px solid white;
+    border-radius: 50%;
+    background: #d745ee;
+    bottom: -250px;
+    right: -250px;
+    transform: translate(0px, 0px);
+    transition: all 0.8s ease 0s;;
+}
+.vkub4:hover .vkub4__krug{
+    transform: translate(0px, -250px);
+    border-radius: 0;
+    background: #FFBF47;
+    transition: all 0.8s ease 0s;
+}
+.vkub2__treug{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 0 250px 250px;
+    border-color: transparent #007bff ;
+    transform: rotate(90deg);
+    transition: all 0.8s ease 0s;
+    position: absolute;
+    right: -250px;
+    top: -250px;
+}
+.vkub2:hover .vkub2__treug{
+    transform: rotate(270deg);
+    transition: all 0.8s ease 0s;
+    border-color: transparent #8ED78F;
+}
+.vkub3__romb{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border: 20px solid white;
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    transition: all 0.8s ease 0s;
+    background-color: #1ffe01;
+    bottom: -200px;
+    right: 280px;
+}
+.vkub3:hover .vkub3__romb{
+    transform: rotate(0deg);
+    transition: all 0.8s ease 0s;
+    background: #FFBF47;
+}
+
+
+
+
